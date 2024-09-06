@@ -1,0 +1,79 @@
+p.title {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+}
+.top-section {
+    background-color: #618063;  
+    padding: 15px; 
+}
+.image {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.image img {
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+}
+div.main {
+    font: monospace;
+}
+body {
+    background: url('snake-pattern.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.box {
+    flex: 1;
+    min-width: 0;
+    border: 2px solid rgb(45, 119, 45);
+    padding: 10px;
+    box-sizing: border-box;
+}
+h1, h2 {
+    font-size: 150%;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid rgb(34, 66, 34);
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+.links {
+    margin-top: 20px;
+}
+a {
+    color: #365d91; 
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+a:hover {
+    color: #d93f8c;
+    text-decoration: underline; 
+}
+
+a:active {
+    color: #ff4500; 
+}
+.bottom-section {
+    background-color: #618063; 
+    padding: 15px; 
+}
+.footer {
+    background-color: rgb(198, 199, 155); 
+    font-family: 'Dancing Script', cursive;
+    color: rgb(22, 68, 28); 
+    text-align: center; 
+    padding: 20px; 
+    width: 97%;
+}

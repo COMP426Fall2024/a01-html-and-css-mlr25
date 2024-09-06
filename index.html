@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Assignment 1</title>
+ <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="top-section">
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="relevance-today.html">Relevance Today</a>
+            <a href="about.html">About This Site</a>
+        </div>
+        <p class="title">Perseus and the Gorgon Medusa</p>
+    </div>
+    <div class="image">
+        <img src="medusa.jpg" alt="image of Medusa">
+    </div>
+    <div class="bottom-section">
+    <p>The story of Medusa is a well known tale that comes from the Roman poet Ovid.</p>
+    <h1>Characters</h1>
+    <ul>
+      <li><strong>Hermes:</strong> The messanger of the Greek gods.</li>
+      <li><strong>Athena:</strong> The Greek goddess of wisdom, war, and the crafts.</li>
+      <li><strong>Perseus:</strong> The greatest Greek hero and slayer of monsters before the days of Heracles.</li>
+      <li><strong>Medusa:</strong> One of the three Gorgons (Greek monster figures).</li>
+    </ul>
+    <h1>Timeline of Events</h1>
+    <table>
+      <thead>
+          <tr>
+              <th>Event</th>
+              <th>Date</th>
+              <th>Description</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Cursed by Athena</td>
+              <td>Ancient Times</td>
+              <td>Medusa was transformed into a Gorgon by Athena after being desecrated in her temple.</td>
+          </tr>
+          <tr>
+              <td>Quest of Perseus</td>
+              <td>Circa 1200 BC</td>
+              <td>Perseus was tasked with beheading Medusa as part of a quest set by King Polydectes.</td>
+          </tr>
+          <tr>
+              <td>Beheading of Medusa</td>
+              <td>Circa 1200 BC</td>
+              <td>Perseus successfully beheaded Medusa with the help of Athena's shield and Hermes' sword.</td>
+          </tr>
+          <tr>
+              <td>Medusa's Head as a Weapon</td>
+              <td>Post Beheading</td>
+              <td>Perseus used Medusa’s head as a powerful weapon to defeat his enemies and later gave it to Athena.</td>
+          </tr>
+      </tbody>
+  </table>
+  <h1>Learn More about Characters</h1>
+  <select id="character-select" onchange="showCharacterInfo()">
+    <option value="">Select a Character</option>
+    <option value="Hermes">Hermes</option>
+    <option value="Athena">Athena</option>
+    <option value="Perseus">Perseus</option>
+    <option value="Medusa">Medusa</option>
+</select>
+<div id="character-info"> 
+</div>
+</div>
+<script>
+  function showCharacterInfo() {
+      const select = document.getElementById('character-select');
+      const infoDiv = document.getElementById('character-info');
+      const character = select.value;
+
+      if (character === 'Hermes') {
+          infoDiv.innerHTML = '<h3>Hermes</h3><p>Hermes is the messenger god and the god of travel, commerce, and thievery. In the myth of Medusa, he provided Perseus with a magical sword that was essential for beheading Medusa.</p>';
+      } else if (character === 'Athena') {
+          infoDiv.innerHTML = '<h3>Athena</h3><p>Athena is the goddess of wisdom and warfare. She cursed Medusa after being desecrated in her temple, transforming her into a Gorgon.</p>';
+      } else if (character === 'Perseus') {
+          infoDiv.innerHTML = '<h3>Perseus</h3><p>Perseus was a hero in Greek mythology who was tasked with beheading Medusa. He succeeded with the help of Athena and Hermes.</p>';
+      } else if (character === 'Medusa'){
+          infoDiv.innerHTML = '<h3>Medusa</h3><p>Medusa was a Gorgon, a creature with snakes for hair whose gaze turned people to stone. She was cursed by Athena and eventually beheaded by Perseus.</p>';
+      }
+  }
+</script>
+<footer class="footer">
+    <p>Coded by Madison &#x1F913</p>
+</footer>
+
+</body>
+
+</html>

@@ -18,7 +18,7 @@ p.title {
     height: 300px;
 }
 div.main {
-    font: monospace;
+    font-family: monospace;
 }
 body {
     background: url('snake-pattern.jpg') no-repeat center center fixed;
